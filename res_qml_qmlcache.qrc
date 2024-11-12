@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="res/qml/MainLoader.qml">res/qml/MainLoader.qml</file>
+        <file alias="res/qml/DynamicLoader.qml">res/qml/DynamicLoader.qml</file>
+        <file alias="res/qml/Examples/Meters.qml">res/qml/Examples/Meters.qml</file>
+        <file alias="res/qml/Examples/RtData.qml">res/qml/Examples/RtData.qml</file>
+        <file alias="res/qml/Examples/RtDataSetup.qml">res/qml/Examples/RtDataSetup.qml</file>
+        <file alias="res/qml/Examples/CanDebugger.qml">res/qml/Examples/CanDebugger.qml</file>
+        <file alias="res/qml/Examples/PollValues.qml">res/qml/Examples/PollValues.qml</file>
+        <file alias="res/qml/Examples/Controls.qml">res/qml/Examples/Controls.qml</file>
+        <file alias="res/qml/Examples/BMS.qml">res/qml/Examples/BMS.qml</file>
+        <file alias="res/qml/Examples/Reconnect.qml">res/qml/Examples/Reconnect.qml</file>
+        <file alias="res/qml/Examples/Profiles.qml">res/qml/Examples/Profiles.qml</file>
+        <file alias="res/qml/SetupMotorWindow.qml">res/qml/SetupMotorWindow.qml</file>
+        <file alias="res/qml/WelcomeQmlPanel.qml">res/qml/WelcomeQmlPanel.qml</file>
+        <file alias="res/qml/Examples/TcpServer.qml">res/qml/Examples/TcpServer.qml</file>
+        <file alias="res/qml/Examples/ParentTabBar.qml">res/qml/Examples/ParentTabBar.qml</file>
+        <file alias="res/qml/Examples/IoBoard.qml">res/qml/Examples/IoBoard.qml</file>
+        <file alias="res/qml/Examples/ExperimentPlot.qml">res/qml/Examples/ExperimentPlot.qml</file>
+        <file alias="res/qml/Examples/LogTextToFile.qml">res/qml/Examples/LogTextToFile.qml</file>
+        <file alias="res/qml/Examples/MMXGui.qml">res/qml/Examples/MMXGui.qml</file>
+        <file alias="res/qml/Examples/BrakeBench.qml">res/qml/Examples/BrakeBench.qml</file>
+        <file alias="res/qml/Examples/PositionControl.qml">res/qml/Examples/PositionControl.qml</file>
+        <file alias="res/qml/Examples/GaugeTest.qml">res/qml/Examples/GaugeTest.qml</file>
+        <file alias="res/qml/Examples/RpmSlider.qml">res/qml/Examples/RpmSlider.qml</file>
+        <file alias="res/qml/Examples/BalanceUi.qml">res/qml/Examples/BalanceUi.qml</file>
+        <file alias="res/qml/Examples/MotorComparisonModel.qml">res/qml/Examples/MotorComparisonModel.qml</file>
+        <file alias="res/qml/Examples/UdpServer.qml">res/qml/Examples/UdpServer.qml</file>
+        <file alias="res/qml/Examples/ConfigParams.qml">res/qml/Examples/ConfigParams.qml</file>
+        <file alias="res/qml/Examples/TcpHub.qml">res/qml/Examples/TcpHub.qml</file>
+        <file alias="res/qml/Examples/ParamTableAndPlot.qml">res/qml/Examples/ParamTableAndPlot.qml</file>
+        <file alias="res/qml/Examples/SendToLbm.qml">res/qml/Examples/SendToLbm.qml</file>
+        <file alias="res/qml/Examples/DCDC.qml">res/qml/Examples/DCDC.qml</file>
+        <file alias="res/qml/Examples/Mp3Stream.qml">res/qml/Examples/Mp3Stream.qml</file>
+    </qresource>
+</RCC>

@@ -30,7 +30,7 @@ DEFINES += VT_CONFIG_VERSION=$$VT_CONFIG_VERSION
 DEFINES += VT_IS_TEST_VERSION=$$VT_IS_TEST_VERSION
 DEFINES += VT_GIT_COMMIT=$$VT_GIT_COMMIT
 QT_LOGGING_RULES="qt.qml.connections=false"
-#CONFIG += qtquickcompiler
+CONFIG += qtquickcompiler
 
 CONFIG += c++11
 CONFIG += resources_big
@@ -99,7 +99,7 @@ unix: {
 #CONFIG += build_gold
 #CONFIG += build_silver
 #CONFIG += build_bronze
-#CONFIG += build_free
+CONFIG += build_free
 
 QT       += core gui
 QT       += widgets
@@ -173,7 +173,7 @@ release_win {
     UI_DIR = build/win/obj
 }
 
-release_lin {
+#distribution linux, if was removed
     # http://micro.nicholaswilson.me.uk/post/31855915892/rules-of-static-linking-libstdc-libc-libgcc
     # http://insanecoding.blogspot.se/2012/07/creating-portable-linux-binaries.html
     QMAKE_LFLAGS += -static-libstdc++ -static-libgcc
@@ -182,7 +182,7 @@ release_lin {
     MOC_DIR = build/lin/obj
     RCC_DIR = build/lin/obj
     UI_DIR = build/lin/obj
-}
+
 
 release_macos {
     # brew install qt
@@ -201,9 +201,11 @@ release_android {
     UI_DIR = build/android/obj
 }
 
+
 build_mobile {
     DEFINES += USE_MOBILE
 }
+
 
 SOURCES += main.cpp\
     bleuartdummy.cpp \
@@ -273,12 +275,15 @@ include(mobile/mobile.pri)
 include(map/map.pri)
 include(lzokay/lzokay.pri)
 include(heatshrink/heatshrink.pri)
-include(QCodeEditor/qcodeeditor.pri)
+include(QCodeEditor_files/qcodeeditor.pri)
 include(esp32/esp32.pri)
 include(display_tool/display_tool.pri)
 include(qmarkdowntextedit/qmarkdowntextedit.pri)
 include(maddy/maddy.pri)
 include(minimp3/minimp3.pri)
+INCLUDEPATH+= /home/niels/Programming/bldc/vesc_tool/QCodeEditor_files
+INCLUDEPATH+= /home/niels/Programming/bldc/vesc_tool/QCodeEditor_files/include
+INCLUDEPATH+=/home/niels/Programming/bldc/vesc_tool/QCodeEditor_files/src/internal
 
 RESOURCES += res.qrc \
     res_custom_module.qrc \
@@ -288,10 +293,6 @@ RESOURCES += res_config.qrc
 
 RESOURCES += res_fw_bms.qrc
 RESOURCES += res/firmwares_esp/res_fw_esp.qrc
-
-!exclude_fw {
-    RESOURCES += res/firmwares/res_fw.qrc
-}
 
 build_original {
     RESOURCES += res_original.qrc
