@@ -29,7 +29,7 @@
 #include "markdownhighlighter.h"
 #include "qownlanguagedata.h"
 #include "utility.h"
-#include "QCodeEditor/include/internal/QSyntaxStyle.hpp"
+#include "QCodeEditor_files/include/internal/QSyntaxStyle.hpp"
 
 #include <QDebug>
 #include <QRegularExpression>
